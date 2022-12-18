@@ -1,4 +1,4 @@
-﻿namespace RealEstateAd_CleanArchitecture.Domain.Common;
+﻿namespace RealEstateAd_CleanArchitecture.Domain.ValueObjects;
 
 public class Address : ValueObject
 {
