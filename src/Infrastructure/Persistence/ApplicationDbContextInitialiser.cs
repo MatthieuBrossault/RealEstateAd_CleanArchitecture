@@ -3,6 +3,10 @@ using RealEstateAd_CleanArchitecture.Infrastructure.Identity;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using RealEstateAd_CleanArchitecture.Domain.Entities.RealEstateAd;
+using RealEstateAd_CleanArchitecture.Domain.Enums;
+using RealEstateAd_CleanArchitecture.Domain.ValueObjects;
+using RealEstateAd_CleanArchitecture.Domain.Common;
 
 namespace RealEstateAd_CleanArchitecture.Infrastructure.Persistence;
 
@@ -83,6 +87,20 @@ public class ApplicationDbContextInitialiser
                     new TodoItem { Title = "Realise you've already done two things on the list! 🤯"},
                     new TodoItem { Title = "Reward yourself with a nice, long nap 🏆" },
                 }
+            });
+
+            await _context.SaveChangesAsync();
+        }
+
+        if (!_context.RealEstateAds.Any())
+        {
+            _context.RealEstateAds.Add(new RealEstateAd
+            {
+                Title = "App Nantes T2",
+                Description = "Un appartement de type T2 à Nantes",
+                PublicationStatus = PublicationStatus.WaitingValidation,
+                PropertyType = PropertyType.Apartment,
+                Location = new Location(47.218637, -1.554136, "13 Boulevard Emile Romanet", "Nantes", string.Empty, "France", "44100")
             });
 
             await _context.SaveChangesAsync();

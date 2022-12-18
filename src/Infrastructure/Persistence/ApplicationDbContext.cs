@@ -8,6 +8,7 @@ using MediatR;
 using Microsoft.AspNetCore.ApiAuthorization.IdentityServer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
+using RealEstateAd_CleanArchitecture.Domain.Entities.RealEstateAd;
 
 namespace RealEstateAd_CleanArchitecture.Infrastructure.Persistence;
 
@@ -30,6 +31,8 @@ public class ApplicationDbContext : ApiAuthorizationDbContext<ApplicationUser>, 
     public DbSet<TodoList> TodoLists => Set<TodoList>();
 
     public DbSet<TodoItem> TodoItems => Set<TodoItem>();
+
+    public DbSet<RealEstateAd> RealEstateAds => Set<RealEstateAd>();
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
