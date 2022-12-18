@@ -14,7 +14,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Entities\RealEstateAd\" />
+      <Folder Include="Entities\RealEstate\" />
       <Folder Include="Entities\OpenMeteo\" />
     </ItemGroup>
 

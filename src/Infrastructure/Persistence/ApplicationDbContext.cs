@@ -8,7 +8,7 @@ using MediatR;
 using Microsoft.AspNetCore.ApiAuthorization.IdentityServer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
-using RealEstateAd_CleanArchitecture.Domain.Entities.RealEstateAd;
+using RealEstateAd_CleanArchitecture.Domain.Entities.RealEstate;
 
 namespace RealEstateAd_CleanArchitecture.Infrastructure.Persistence;
 

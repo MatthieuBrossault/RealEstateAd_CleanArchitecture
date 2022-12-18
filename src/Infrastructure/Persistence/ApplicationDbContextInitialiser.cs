@@ -3,7 +3,7 @@ using RealEstateAd_CleanArchitecture.Infrastructure.Identity;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using RealEstateAd_CleanArchitecture.Domain.Entities.RealEstateAd;
+using RealEstateAd_CleanArchitecture.Domain.Entities.RealEstate;
 using RealEstateAd_CleanArchitecture.Domain.Enums;
 using RealEstateAd_CleanArchitecture.Domain.ValueObjects;
 using RealEstateAd_CleanArchitecture.Domain.Common;

@@ -5,6 +5,7 @@ using RealEstateAd_CleanArchitecture.Application.Common.Models;
 using RealEstateAd_CleanArchitecture.Application.TodoLists.Queries.GetTodos;
 using RealEstateAd_CleanArchitecture.Domain.Entities;
 using NUnit.Framework;
+using RealEstateAd_CleanArchitecture.Domain.Entities.RealEstate;
 
 namespace RealEstateAd_CleanArchitecture.Application.UnitTests.Common.Mappings;
 
@@ -32,6 +33,7 @@ public class MappingTests
     [TestCase(typeof(TodoItem), typeof(TodoItemDto))]
     [TestCase(typeof(TodoList), typeof(LookupDto))]
     [TestCase(typeof(TodoItem), typeof(LookupDto))]
+    [TestCase(typeof(RealEstateAd), typeof(LookupDto))]
     public void ShouldSupportMappingFromSourceToDestination(Type source, Type destination)
     {
         var instance = GetInstanceOf(source);

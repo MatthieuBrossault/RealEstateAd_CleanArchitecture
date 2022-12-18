@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using RealEstateAd_CleanArchitecture.Domain.Entities.RealEstateAd;
+using RealEstateAd_CleanArchitecture.Domain.Entities.RealEstate;
 
 namespace RealEstateAd_CleanArchitecture.Infrastructure.Persistence.Configurations;
 

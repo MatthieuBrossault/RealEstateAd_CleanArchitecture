@@ -1,4 +1,4 @@
-﻿namespace RealEstateAd_CleanArchitecture.Domain.Entities.RealEstateAd;
+﻿namespace RealEstateAd_CleanArchitecture.Domain.Entities.RealEstate;
 
 public class RealEstateAd : BaseAuditableEntity
 {
